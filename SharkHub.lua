@@ -28,21 +28,22 @@ GUI:Notification{
 
 local Tab = GUI:Tab{
 	Name = "Tp",
-	Icon = "rbxassetid://8569322835"
+	Icon = "rbxassetid://11185247637"
 }
 
 if world1 == true then
      if not world1 == false then
+
+Tab:Button{
+	Name = "Jungle",
+	Description = nil,
+	Callback = function() game.Players.LocalPlayer.Character.Humanoid.Health = 0 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1544.32385, 3.20005798, 243.812088, -0.866007447, 0, -0.500031412, 0, 1, 0, 0.500031412, 0, -0.866007447) end
+}
+
 Tab:Button{
 	Name = "Ice",
 	Description = nil,
 	Callback = function() game.Players.LocalPlayer.Character.Humanoid.Health = 0  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1304.66748, 23.06427, -1236.82788, 3.29017639e-05, 0.933115244, 0.359577239, 0.999999881, -3.27825546e-05, -6.09457493e-06, 6.09457493e-06, 0.359577239, -0.933115244) end
-}
-
-Tab:Button{
-	Name = "Underwater City",
-	Description = nil,
-	Callback = function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61163.8516, 11.6796875, 1819.78418, 1, 0, 0, 0, 1, 0, 0, 0, 1) end
 }
 
 Tab:Button{
@@ -56,6 +57,19 @@ Tab:Button{
 	Description = nil,
 	Callback = function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4851.10645, 717.696289, -2632.74609, -0.187225878, 0, 0.982316911, 0, 1, 0, -0.982316911, 0, -0.187225878) end
 }
+
+Tab:Button{
+	Name = "Underwater City",
+	Description = nil,
+	Callback = function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61163.8516, 11.6796875, 1819.78418, 1, 0, 0, 0, 1, 0, 0, 0, 1) end
+}
+
+Tab:Button{
+	Name = "Prison",
+	Description = nil,
+	Callback = function() game.Players.LocalPlayer.Character.Humanoid.Health = 0 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5090.95068, 15.0000143, 390.385193, 0.882971585, 0.469426453, -1.34855509e-05, 1.34855509e-05, -5.41210175e-05, -1, -0.469426453, 0.882971644, -5.41210175e-05) end
+}
+
 
 
 end
